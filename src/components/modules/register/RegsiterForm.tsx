@@ -48,7 +48,7 @@ const RegisterForm = () => {
         </div>
         <Button
           variant="default"
-          className="h-10 w-full active:bg-primary text-white hover:bg-black rounded-[20px] shadow-lg"
+          className="h-10 w-full active:bg-[#ABBB00] text-white hover:bg-black rounded-[20px] shadow-lg"
           type="submit"
           disabled={false}
         >

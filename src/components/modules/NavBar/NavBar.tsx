@@ -135,7 +135,7 @@ const NavBar = () => {
           <div className="hidden lg:flex gap-x-3 items-center">
             <Button
               variant="default"
-              className="h-10 w-full active:bg-primary cursor-pointer text-white hover:bg-black rounded-[20px] shadow-lg"
+              className="h-10 w-full active:bg-[#ABBB00] cursor-pointer text-white hover:bg-black rounded-[20px] shadow-lg"
               type="submit"
               disabled={false}
               onClick={() => router.push("/login")}
@@ -145,7 +145,7 @@ const NavBar = () => {
             </Button>
             <Button
               variant="default"
-              className="h-10 cursor-pointer w-full active:bg-black bg-black text-white hover:bg-primary rounded-[20px] shadow-lg"
+              className="h-10 cursor-pointer w-full active:bg-black bg-black text-white hover:bg-[#ABBB00] rounded-[20px] shadow-lg"
               type="submit"
               disabled={false}
               onClick={() => router.push("/register")}

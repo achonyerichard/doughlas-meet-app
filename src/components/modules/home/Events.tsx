@@ -38,7 +38,7 @@ console.log(currentItems)
           <SelectTrigger className="w-[150px] rounded-[20px] border-none bg-gray-200">
             <SelectValue placeholder="Event Location" />
           </SelectTrigger>
-          <SelectContent className="border-none bg-gray">
+          <SelectContent className="border-none bg-white">
             <SelectItem value="light">Virtual</SelectItem>
             <SelectItem value="dark">Physical</SelectItem>
           </SelectContent>
@@ -47,7 +47,7 @@ console.log(currentItems)
           <SelectTrigger className="w-[150px] rounded-[20px] border-none bg-gray-200">
             <SelectValue placeholder="Event Type" />
           </SelectTrigger>
-          <SelectContent className="border-none bg-gray">
+          <SelectContent className="border-none bg-white">
             <SelectItem value="light">Educational</SelectItem>
             <SelectItem value="dark">Entertainment</SelectItem>
             <SelectItem value="light">Sports</SelectItem>

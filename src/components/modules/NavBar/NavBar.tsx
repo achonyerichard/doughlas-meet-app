@@ -35,7 +35,7 @@ const NavBar = () => {
   const [showPanel, setShowPanel] = React.useState<Checked>(false);
   const router = useRouter();
   return (
-    <div className="sticky  top-0 z-10 flex h-16 items-center justify-between bg-white px-3 shadow-lg xl:h-[88px] xl:px-9">
+    <div className="sticky  top-0 z-10 flex h-16 items-center justify-between bg-white px-5 shadow-lg xl:h-[88px] xl:px-9">
       <nav className="flex justify-between items-center w-full">
         <Image
           src={"/images/logo.png"}
@@ -91,7 +91,7 @@ const NavBar = () => {
                 <div className="flex flex-col gap-y-3 items-center w-full">
                   <Button
                     variant="default"
-                    className="h-10 w-full active:bg-primary cursor-pointer text-white hover:bg-black rounded shadow-lg"
+                    className="h-10 w-full bg-primary cursor-pointer text-white hover:bg-black rounded shadow-lg"
                     type="submit"
                     disabled={false}
                     onClick={() => router.push("/login")}

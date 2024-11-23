@@ -32,7 +32,7 @@ console.log(currentItems)
         setItemOffset(newOffset);
     };
   return (
-    <div>
+    <div className="w-full">
       <div className="flex gap-2 items-center">
         <Select>
           <SelectTrigger className="w-[150px] rounded-[20px] border-none bg-gray-200">
@@ -102,11 +102,11 @@ console.log(currentItems)
       ))}
           <ReactPaginate
               breakLabel="....."
-              nextLabel="Next >"
+              nextLabel=" >"
               onPageChange={handlePageClick}
               pageRangeDisplayed={1}
               pageCount={pageCount}
-              previousLabel="< Previous"
+              previousLabel="<"
               renderOnZeroPageCount={null}
               containerClassName="pagination"
               pageClassName="page-item"

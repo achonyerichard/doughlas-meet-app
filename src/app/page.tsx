@@ -104,7 +104,7 @@ export default function Home() {
   return (
     <>
       <NavBar />
-      <main className="flex items-start gap-6 max-w-[1440px] lg:px-20 px-10 mx-5 lg:mx-0 py-10 lg:py-20 min-h-screen">
+      <main className="flex items-start lg:gap-6 max-w-[1440px] lg:px-20 px-10  lg:mx-0 py-10 lg:py-20 min-h-screen">
         <div className="hidden lg:block w-[30%] sticky top-28">
           <DatePicker
             selected={startDate}

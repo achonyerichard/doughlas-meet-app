@@ -63,7 +63,7 @@ console.log(currentItems)
 }) => (
         <Card
           key={item.name}
-          className="w-full flex  flex-col gap-y-3 mt-5 p-5 "
+          className="w-full flex  flex-col gap-y-3 mt-5 p-3 lg:p-5 "
         >
           <div className="flex gap-x-2 items-center pb-2">
             <Image

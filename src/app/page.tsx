@@ -35,19 +35,25 @@ export default function Home() {
       attendees: [
         {
           name: "John Doe",
-          profileImage: "https://randomuser.me/api/portraits/men/1.jpg",
+          profileImage: "https://images.unsplash.com/photo-1521566652839-697aa473761a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D",
         },
         {
           name: "Jane Smith",
-          profileImage: "https://randomuser.me/api/portraits/women/2.jpg",
+          profileImage: "https://images.unsplash.com/photo-1521566652839-697aa473761a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D",
+          role:"speaker"
         },
         {
           name: "Alice Brown",
-          profileImage: "https://randomuser.me/api/portraits/women/3.jpg",
+          profileImage: "https://unsplash.com/photos/a-man-with-a-beard-and-a-green-shirt-ZgwIEWcvlKo",
         },
         {
           name: "Bob White",
-          profileImage: "https://randomuser.me/api/portraits/men/4.jpg",
+          profileImage: "https://unsplash.com/photos/a-man-with-a-beard-and-a-green-shirt-ZgwIEWcvlKo",
+        },
+        {
+          name: "Angela Smith",
+          profileImage: "https://unsplash.com/photos/woman-near-green-leafed-plants-R8bNESnnKR8",
+
         },
       ],
       description:
@@ -66,19 +72,21 @@ export default function Home() {
       attendees: [
         {
           name: "John Doe",
-          profileImage: "https://randomuser.me/api/portraits/men/1.jpg",
+          profileImage: "https://images.unsplash.com/photo-1521566652839-697aa473761a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D",
         },
         {
           name: "Jane Smith",
-          profileImage: "https://randomuser.me/api/portraits/women/2.jpg",
+          profileImage: "https://unsplash.com/photos/woman-near-green-leafed-plants-R8bNESnnKR8",
+         
         },
         {
           name: "Alice Brown",
-          profileImage: "https://randomuser.me/api/portraits/women/3.jpg",
+          profileImage: "https://unsplash.com/photos/a-man-with-a-beard-and-a-green-shirt-ZgwIEWcvlKo",
         },
         {
           name: "Bob White",
-          profileImage: "https://randomuser.me/api/portraits/men/4.jpg",
+          profileImage: "https://unsplash.com/photos/a-man-with-a-beard-and-a-green-shirt-ZgwIEWcvlKo",
+          role: "speaker"
         },
       ],
       description:
@@ -97,19 +105,20 @@ export default function Home() {
       attendees: [
         {
           name: "John Doe",
-          profileImage: "https://randomuser.me/api/portraits/men/1.jpg",
+          profileImage: "https://images.unsplash.com/photo-1521566652839-697aa473761a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D",
         },
         {
           name: "Jane Smith",
-          profileImage: "https://randomuser.me/api/portraits/women/2.jpg",
+          profileImage: "https://unsplash.com/photos/woman-near-green-leafed-plants-R8bNESnnKR8",
+          role:"speaker"
         },
         {
           name: "Alice Brown",
-          profileImage: "https://randomuser.me/api/portraits/women/3.jpg",
+          profileImage: "https://unsplash.com/photos/a-man-with-a-beard-and-a-green-shirt-ZgwIEWcvlKo",
         },
         {
           name: "Bob White",
-          profileImage: "https://randomuser.me/api/portraits/men/4.jpg",
+          profileImage: "https://unsplash.com/photos/a-man-with-a-beard-and-a-green-shirt-ZgwIEWcvlKo",
         },
       ],
       description:
@@ -129,19 +138,20 @@ export default function Home() {
       attendees: [
         {
           name: "John Doe",
-          profileImage: "https://randomuser.me/api/portraits/men/1.jpg",
+          profileImage: "https://images.unsplash.com/photo-1521566652839-697aa473761a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D",
         },
         {
           name: "Jane Smith",
-          profileImage: "https://randomuser.me/api/portraits/women/2.jpg",
+          profileImage: "https://unsplash.com/photos/woman-near-green-leafed-plants-R8bNESnnKR8",
+          role:"speaker"
         },
         {
           name: "Alice Brown",
-          profileImage: "https://randomuser.me/api/portraits/women/3.jpg",
+          profileImage: "https://unsplash.com/photos/a-man-with-a-beard-and-a-green-shirt-ZgwIEWcvlKo",
         },
         {
           name: "Bob White",
-          profileImage: "https://randomuser.me/api/portraits/men/4.jpg",
+          profileImage: "https://unsplash.com/photos/a-man-with-a-beard-and-a-green-shirt-ZgwIEWcvlKo",
         },
       ],
       description:
@@ -160,19 +170,20 @@ export default function Home() {
       attendees: [
         {
           name: "John Doe",
-          profileImage: "https://randomuser.me/api/portraits/men/1.jpg",
+          profileImage: "https://images.unsplash.com/photo-1521566652839-697aa473761a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D",
         },
         {
           name: "Jane Smith",
-          profileImage: "https://randomuser.me/api/portraits/women/2.jpg",
+          profileImage: "https://unsplash.com/photos/woman-near-green-leafed-plants-R8bNESnnKR8",
+          role:"speaker"
         },
         {
           name: "Alice Brown",
-          profileImage: "https://randomuser.me/api/portraits/women/3.jpg",
+          profileImage: "https://unsplash.com/photos/a-man-with-a-beard-and-a-green-shirt-ZgwIEWcvlKo",
         },
         {
           name: "Bob White",
-          profileImage: "https://randomuser.me/api/portraits/men/4.jpg",
+          profileImage: "https://unsplash.com/photos/a-man-with-a-beard-and-a-green-shirt-ZgwIEWcvlKo",
         },
       ],
       description:
@@ -192,19 +203,20 @@ export default function Home() {
       attendees: [
         {
           name: "John Doe",
-          profileImage: "https://randomuser.me/api/portraits/men/1.jpg",
+          profileImage: "https://images.unsplash.com/photo-1521566652839-697aa473761a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D",
         },
         {
           name: "Jane Smith",
-          profileImage: "https://randomuser.me/api/portraits/women/2.jpg",
+          profileImage: "https://unsplash.com/photos/woman-near-green-leafed-plants-R8bNESnnKR8",
+          role:"speaker"
         },
         {
           name: "Alice Brown",
-          profileImage: "https://randomuser.me/api/portraits/women/3.jpg",
+          profileImage: "https://unsplash.com/photos/a-man-with-a-beard-and-a-green-shirt-ZgwIEWcvlKo",
         },
         {
           name: "Bob White",
-          profileImage: "https://randomuser.me/api/portraits/men/4.jpg",
+          profileImage: "https://unsplash.com/photos/a-man-with-a-beard-and-a-green-shirt-ZgwIEWcvlKo",
         },
       ],
       description:
@@ -222,19 +234,20 @@ export default function Home() {
       attendees: [
         {
           name: "John Doe",
-          profileImage: "https://randomuser.me/api/portraits/men/1.jpg",
+          profileImage: "https://images.unsplash.com/photo-1521566652839-697aa473761a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D",
         },
         {
           name: "Jane Smith",
-          profileImage: "https://randomuser.me/api/portraits/women/2.jpg",
+          profileImage: "https://unsplash.com/photos/woman-near-green-leafed-plants-R8bNESnnKR8",
+          role:"speaker"
         },
         {
           name: "Alice Brown",
-          profileImage: "https://randomuser.me/api/portraits/women/3.jpg",
+          profileImage: "https://unsplash.com/photos/a-man-with-a-beard-and-a-green-shirt-ZgwIEWcvlKo",
         },
         {
           name: "Bob White",
-          profileImage: "https://randomuser.me/api/portraits/men/4.jpg",
+          profileImage: "https://unsplash.com/photos/a-man-with-a-beard-and-a-green-shirt-ZgwIEWcvlKo",
         },
       ],
       description:
@@ -253,19 +266,20 @@ export default function Home() {
       attendees: [
         {
           name: "John Doe",
-          profileImage: "https://randomuser.me/api/portraits/men/1.jpg",
+          profileImage: "https://images.unsplash.com/photo-1521566652839-697aa473761a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D",
         },
         {
           name: "Jane Smith",
-          profileImage: "https://randomuser.me/api/portraits/women/2.jpg",
+          profileImage: "https://unsplash.com/photos/woman-near-green-leafed-plants-R8bNESnnKR8",
+          role:"speaker"
         },
         {
           name: "Alice Brown",
-          profileImage: "https://randomuser.me/api/portraits/women/3.jpg",
+          profileImage: "https://unsplash.com/photos/a-man-with-a-beard-and-a-green-shirt-ZgwIEWcvlKo",
         },
         {
           name: "Bob White",
-          profileImage: "https://randomuser.me/api/portraits/men/4.jpg",
+          profileImage: "https://unsplash.com/photos/a-man-with-a-beard-and-a-green-shirt-ZgwIEWcvlKo",
         },
       ],
       description:
@@ -283,19 +297,20 @@ export default function Home() {
       attendees: [
         {
           name: "John Doe",
-          profileImage: "https://randomuser.me/api/portraits/men/1.jpg",
+          profileImage: "https://images.unsplash.com/photo-1521566652839-697aa473761a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D",
         },
         {
           name: "Jane Smith",
-          profileImage: "https://randomuser.me/api/portraits/women/2.jpg",
+          profileImage: "https://unsplash.com/photos/woman-near-green-leafed-plants-R8bNESnnKR8",
+          role:"speaker"
         },
         {
           name: "Alice Brown",
-          profileImage: "https://randomuser.me/api/portraits/women/3.jpg",
+          profileImage: "https://unsplash.com/photos/a-man-with-a-beard-and-a-green-shirt-ZgwIEWcvlKo",
         },
         {
           name: "Bob White",
-          profileImage: "https://randomuser.me/api/portraits/men/4.jpg",
+          profileImage: "https://unsplash.com/photos/a-man-with-a-beard-and-a-green-shirt-ZgwIEWcvlKo",
         },
       ],
       description:
@@ -314,19 +329,20 @@ export default function Home() {
       attendees: [
         {
           name: "John Doe",
-          profileImage: "https://randomuser.me/api/portraits/men/1.jpg",
+          profileImage: "https://images.unsplash.com/photo-1521566652839-697aa473761a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D",
         },
         {
           name: "Jane Smith",
-          profileImage: "https://randomuser.me/api/portraits/women/2.jpg",
+          profileImage: "https://unsplash.com/photos/woman-near-green-leafed-plants-R8bNESnnKR8",
+          role:"speaker"
         },
         {
           name: "Alice Brown",
-          profileImage: "https://randomuser.me/api/portraits/women/3.jpg",
+          profileImage: "https://unsplash.com/photos/a-man-with-a-beard-and-a-green-shirt-ZgwIEWcvlKo",
         },
         {
           name: "Bob White",
-          profileImage: "https://randomuser.me/api/portraits/men/4.jpg",
+          profileImage: "https://unsplash.com/photos/a-man-with-a-beard-and-a-green-shirt-ZgwIEWcvlKo",
         },
       ],
       description:

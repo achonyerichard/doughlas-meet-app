@@ -75,7 +75,12 @@ const Events = ({ events }: any) => {
           name: string;
           coverImage: string;
         }) => (
-          <Link key={item.name} href={`/${item.id}`}>
+          <Link onClick={() => {
+            window?.localStorage.setItem(
+              "singleEvent",
+              JSON.stringify(item)
+            );
+          }} key={item.name} href={`/${item.id}`}>
             <Card className="w-full flex  flex-col gap-y-3 mt-5 p-3 lg:p-5 ">
               <div className="flex gap-x-2 items-center pb-2">
                 <Image

@@ -237,6 +237,7 @@ const EventDetails = () => {
               <div className="flex justify-between items-center px-5">
                 {socials.map((social, index) => (
                   <Link
+                    target="_blank"
                     href={social.url}
                     className="text-white"
                     key={social.url}

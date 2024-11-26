@@ -77,7 +77,7 @@ const EventDetails = () => {
       url: `https://www.tiktok.com/inbox`, // TikTok (manual redirection)
     },
     {
-      sm: "/icons/whatsapp.png",
+      sm: "/icons/whatsappIcon.png",
       url: `https://wa.me/?text=${encodeURIComponent(
         `Check this out: ${currentUrl}`,
       )}`, // WhatsApp

@@ -37,20 +37,24 @@ const NavBar = () => {
   return (
     <div className="sticky  top-0 z-10 flex h-16 items-center justify-between bg-white px-5 shadow-lg xl:h-[88px] xl:px-9">
       <nav className="flex justify-between items-center w-full">
-        <Image
-          src={"/images/logo.png"}
-          alt=""
-          width={500}
-          height={200}
-          className="hidden lg:block h-auto w-16 object-cover   "
-        />
+        <Link href="/">
+          {" "}
+          <Image
+            src={"/images/logo.png"}
+            alt=""
+            width={500}
+            height={200}
+            className="hidden lg:block h-auto w-16 object-cover   "
+          />
+        </Link>
+
         <div className="block lg:hidden">
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button variant="outline">
                 {" "}
                 <Button variant="ghost">
-                  <Menu size={16}/>
+                  <Menu size={16} />
                 </Button>
               </Button>
             </DropdownMenuTrigger>
@@ -171,8 +175,10 @@ const NavBar = () => {
             <DropdownMenuContent className="bg-white mr-5">
               <DropdownMenuLabel>My Account</DropdownMenuLabel>
               <DropdownMenuSeparator />
-              <DropdownMenuItem>Profile</DropdownMenuItem>
-              <DropdownMenuItem>Billing</DropdownMenuItem>
+              <DropdownMenuItem><Link href="/profile">Profile</Link></DropdownMenuItem>
+              <DropdownMenuItem>
+                <Link href="/my-events">My Events</Link>
+              </DropdownMenuItem>
               <DropdownMenuItem>Settings</DropdownMenuItem>
               <DropdownMenuItem>Logout</DropdownMenuItem>
             </DropdownMenuContent>

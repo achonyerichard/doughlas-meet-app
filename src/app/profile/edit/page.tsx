@@ -48,22 +48,7 @@ const EditProfile = () => {
                       />
                     </div>
 
-                    <div className="w-full">
-                      <label
-                        htmlFor="last_name"
-                        className="block mb-2 text-sm font-medium text-indigo-900 dark:text-white"
-                      >
-                        Your last name
-                      </label>
-                      <Input
-                        type="text"
-                        id="last_name"
-                        className="bg-indigo-50 border border-indigo-300 text-indigo-900 text-sm rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block w-full p-2.5 "
-                        placeholder="Your last name"
-                        value="Ferguson"
-                        required
-                      />
-                    </div>
+                  
                   </div>
 
                   <div className="mb-2 sm:mb-6">
@@ -73,7 +58,7 @@ const EditProfile = () => {
                     >
                       Your email
                     </label>
-                    <Input
+                    <Input                   
                       type="email"
                       id="email"
                       className="bg-indigo-50 border border-indigo-300 text-indigo-900 text-sm rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block w-full p-2.5 "

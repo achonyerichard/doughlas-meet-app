@@ -22,6 +22,7 @@ import {
   BellDotIcon,
   Calendar1Icon,
   ChevronDown,
+  HomeIcon,
   Menu,
   Star,
 } from "lucide-react";
@@ -48,15 +49,10 @@ const NavBar = () => {
           />
         </Link>
 
-        <div className="block lg:hidden">
+        <div className="block lg:hidden flex items-start">
           <DropdownMenu>
-            <DropdownMenuTrigger asChild>
-              <Button variant="outline">
-                {" "}
-                <Button variant="ghost">
-                  <Menu size={16} />
-                </Button>
-              </Button>
+            <DropdownMenuTrigger asChild className="flex items-start">
+              <Menu size={16} />
             </DropdownMenuTrigger>
             <DropdownMenuContent className="w-56 bg-white">
               <DropdownMenuLabel>Navigation</DropdownMenuLabel>
@@ -65,20 +61,22 @@ const NavBar = () => {
                 checked={showStatusBar}
                 onCheckedChange={setShowStatusBar}
               >
-                Home
+                <Link href="/">Home</Link>
               </DropdownMenuCheckboxItem>
               <DropdownMenuCheckboxItem
                 checked={showActivityBar}
                 onCheckedChange={setShowActivityBar}
-                disabled
+                
               >
-                Groups
+                <Link href="/group">
+                  Groups
+                  </Link>
               </DropdownMenuCheckboxItem>
               <DropdownMenuCheckboxItem
                 checked={showPanel}
                 onCheckedChange={setShowPanel}
               >
-                Events
+                <Link href="/my-events">Events</Link>
               </DropdownMenuCheckboxItem>
               <DropdownMenuItem>
                 {" "}
@@ -131,9 +129,9 @@ const NavBar = () => {
           <span>
             <BellDotIcon />
           </span>
-          <span>
-            <Calendar1Icon />
-          </span>
+          <Link href="/">
+            <HomeIcon />
+          </Link>
         </div>
         <div className="flex gap-x-3 items-center">
           <div className="hidden lg:flex gap-x-3 items-center">
@@ -175,11 +173,16 @@ const NavBar = () => {
             <DropdownMenuContent className="bg-white mr-5">
               <DropdownMenuLabel>My Account</DropdownMenuLabel>
               <DropdownMenuSeparator />
-              <DropdownMenuItem><Link href="/profile">Profile</Link></DropdownMenuItem>
+              <DropdownMenuItem>
+                <Link href="/profile">Profile</Link>
+              </DropdownMenuItem>
               <DropdownMenuItem>
                 <Link href="/my-events">My Events</Link>
               </DropdownMenuItem>
-              <DropdownMenuItem>Settings</DropdownMenuItem>
+              <DropdownMenuItem>
+                <Link href="/groups">Groups</Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem>  <Link href="/settings">Settings</Link></DropdownMenuItem>
               <DropdownMenuItem>Logout</DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>

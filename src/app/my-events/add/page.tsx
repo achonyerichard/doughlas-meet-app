@@ -1,8 +1,6 @@
 "use client";
 import React, { useState } from "react";
 import { Controller, useForm } from "react-hook-form";
-import { z } from "zod";
-import { zodResolver } from "@hookform/resolvers/zod";
 import Footer from "@/components/modules/Footer/Footer";
 import NavBar from "@/components/modules/NavBar/NavBar";
 import { Input } from "@/components/ui/input";
@@ -14,9 +12,17 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Button } from "@/components/ui/button";
-import { Trash2Icon } from "lucide-react";
+import { ArrowBigLeft, MoveLeft, Trash2Icon } from "lucide-react";
 import { Textarea } from "@/components/ui/textarea";
-
+import { useRouter } from "next/navigation";
+import { continents, countries, languages } from "countries-list";
+// Utils
+import {
+  getCountryCode,
+  getCountryData,
+  getCountryDataList,
+  getEmojiFlag,
+} from "countries-list";
 interface IFormInput {
   name: string;
   description: string;
@@ -35,6 +41,8 @@ export default function CreateEventForm() {
     profileImage: "",
     role: "attendee",
   });
+  const router = useRouter();
+  const countries = getCountryDataList();
 
   // Handle input changes
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -66,6 +74,7 @@ export default function CreateEventForm() {
   } = useForm<IFormInput>({
     defaultValues: {
       type: "", // Default value for the select
+      location: "",
     },
   });
 
@@ -102,11 +111,15 @@ export default function CreateEventForm() {
   return (
     <>
       <NavBar />
-          <main className="bg-gray-100 py-5 lg:py-10">
+      <main className="bg-gray-100 py-5 lg:py-10">
         <div className="max-w-2xl mx-auto p-6 bg-white shadow-md rounded-lg ">
-          <h2 className="text-2xl font-bold mb-6 text-center">
-            Create New Event
-          </h2>
+          <header className="flex items-center justify-center gap-2 mb-6">
+            <MoveLeft
+              onClick={() => router.back()}
+              className="cursor-pointer"
+            />
+            <h2 className="text-2xl font-bold text-center">Create New Event</h2>
+          </header>
 
           <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
             {/* Event Name */}
@@ -158,9 +171,7 @@ export default function CreateEventForm() {
 
                       <SelectContent className="border-none bg-white">
                         <SelectItem value="virtual">Virtual</SelectItem>
-                        <SelectItem value="physical">
-                          MontPhysicalhly
-                        </SelectItem>
+                        <SelectItem value="physical">Physical</SelectItem>
                       </SelectContent>
                     </Select>
                   )}
@@ -173,16 +184,32 @@ export default function CreateEventForm() {
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-700">
-                  Location
-                </label>
-                <Input
-                  {...register("location", {
-                    required: "Location is required",
-                  })}
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
-                  placeholder="Enter location (optional)"
+                <Controller
+                  name="location"
+                  control={control}
+                  rules={{ required: "Location is required" }}
+                  render={({ field: { onChange, value } }) => (
+                    <Select onValueChange={onChange} value={value}>
+                      <SelectTrigger className="h-14 w-full rounded-[16px] border-none bg-gray-100">
+                        <SelectValue placeholder="Select a Location" />
+                      </SelectTrigger>
+
+                      <SelectContent className="border-none bg-white">
+                        {countries?.map((country) => (
+                          <SelectItem value={country?.name} key={country?.name}>
+                            {country?.name}
+                          </SelectItem>
+                        ))}
+                        <SelectItem value="physical">Physical</SelectItem>
+                      </SelectContent>
+                    </Select>
+                  )}
                 />
+                {errors.location && (
+                  <p className="mt-2 text-sm text-red-600">
+                    {errors.location.message}
+                  </p>
+                )}
               </div>
             </div>
 
@@ -260,79 +287,7 @@ export default function CreateEventForm() {
                 )}
               </div>
             </div>
-            <div className="space-y-4">
-              <h3 className="text-lg font-semibold mb-4">Attendees</h3>
-              <div className="grid grid-cols-2 gap-4">
-                <div>
-                  <label className="block text-sm font-medium">Name</label>
-                  <Input
-                    type="text"
-                    name="name"
-                    value={currentAttendee.name}
-                    onChange={handleInputChange}
-                    className="w-full border border-gray-300 rounded-lg px-3 py-2"
-                    placeholder="Enter attendee's name"
-                  />
-                </div>
 
-                <div>
-                  <label className="block text-sm font-medium">
-                    Profile Image URL
-                  </label>
-                  <Input
-                    type="text"
-                    name="profileImage"
-                    value={currentAttendee.profileImage}
-                    onChange={handleInputChange}
-                    className="w-full border border-gray-300 rounded-lg px-3 py-2"
-                    placeholder="Enter profile image URL"
-                  />
-                </div>
-              </div>
-
-              <span className="flex justify-end ">
-                <Button
-                  onClick={handleAddAttendee}
-                  className="bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600 "
-                >
-                  Add Attendee
-                </Button>
-              </span>
-              {attendees.length > 0 ? (
-                <ul className="space-y-2 mt-4">
-                  {attendees.map((attendee, index) => (
-                    <li
-                      key={index}
-                      className="flex items-center justify-between bg-gray-100 p-3 rounded-lg"
-                    >
-                      <div className="flex items-center space-x-4">
-                        <img
-                          src={attendee.profileImage}
-                          alt={attendee.name}
-                          className="w-10 h-10 rounded-full"
-                        />
-                        <div>
-                          <p className="font-medium">{attendee.name}</p>
-                          <p className="text-sm text-gray-500">
-                            {attendee.role}
-                          </p>
-                        </div>
-                      </div>
-                      <button
-                        onClick={() => handleRemoveAttendee(index)}
-                        className="text-red-500 hover:underline"
-                      >
-                        <Trash2Icon />
-                      </button>
-                    </li>
-                  ))}
-                </ul>
-              ) : (
-                <p className="mt-4 text-gray-500 text-center">
-                  No attendees added yet.
-                </p>
-              )}
-            </div>
             {/* Cover Image and Link */}
 
             {/* Submit Button */}

@@ -35,25 +35,29 @@ export default function Home() {
       attendees: [
         {
           name: "John Doe",
-          profileImage: "https://images.unsplash.com/photo-1521566652839-697aa473761a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D",
+          profileImage:
+            "https://images.unsplash.com/photo-1521566652839-697aa473761a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D",
         },
         {
           name: "Jane Smith",
-          profileImage: "https://images.unsplash.com/photo-1521566652839-697aa473761a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D",
-          role:"speaker"
+          profileImage:
+            "https://images.unsplash.com/photo-1521566652839-697aa473761a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D",
+          role: "speaker",
         },
         {
           name: "Alice Brown",
-          profileImage: "https://unsplash.com/photos/a-man-with-a-beard-and-a-green-shirt-ZgwIEWcvlKo",
+          profileImage:
+            "https://unsplash.com/photos/a-man-with-a-beard-and-a-green-shirt-ZgwIEWcvlKo",
         },
         {
           name: "Bob White",
-          profileImage: "https://unsplash.com/photos/a-man-with-a-beard-and-a-green-shirt-ZgwIEWcvlKo",
+          profileImage:
+            "https://unsplash.com/photos/a-man-with-a-beard-and-a-green-shirt-ZgwIEWcvlKo",
         },
         {
           name: "Angela Smith",
-          profileImage: "https://unsplash.com/photos/woman-near-green-leafed-plants-R8bNESnnKR8",
-
+          profileImage:
+            "https://unsplash.com/photos/woman-near-green-leafed-plants-R8bNESnnKR8",
         },
       ],
       description:
@@ -72,21 +76,24 @@ export default function Home() {
       attendees: [
         {
           name: "John Doe",
-          profileImage: "https://images.unsplash.com/photo-1521566652839-697aa473761a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D",
+          profileImage:
+            "https://images.unsplash.com/photo-1521566652839-697aa473761a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D",
         },
         {
           name: "Jane Smith",
-          profileImage: "https://unsplash.com/photos/woman-near-green-leafed-plants-R8bNESnnKR8",
-         
+          profileImage:
+            "https://unsplash.com/photos/woman-near-green-leafed-plants-R8bNESnnKR8",
         },
         {
           name: "Alice Brown",
-          profileImage: "https://unsplash.com/photos/a-man-with-a-beard-and-a-green-shirt-ZgwIEWcvlKo",
+          profileImage:
+            "https://unsplash.com/photos/a-man-with-a-beard-and-a-green-shirt-ZgwIEWcvlKo",
         },
         {
           name: "Bob White",
-          profileImage: "https://unsplash.com/photos/a-man-with-a-beard-and-a-green-shirt-ZgwIEWcvlKo",
-          role: "speaker"
+          profileImage:
+            "https://unsplash.com/photos/a-man-with-a-beard-and-a-green-shirt-ZgwIEWcvlKo",
+          role: "speaker",
         },
       ],
       description:
@@ -105,20 +112,28 @@ export default function Home() {
       attendees: [
         {
           name: "John Doe",
-          profileImage: "https://images.unsplash.com/photo-1521566652839-697aa473761a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D",
+          profileImage:
+            "https://images.unsplash.com/photo-1521566652839-697aa473761a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D",
+          gender: "male",
         },
         {
           name: "Jane Smith",
-          profileImage: "https://unsplash.com/photos/woman-near-green-leafed-plants-R8bNESnnKR8",
-          role:"speaker"
+          profileImage:
+            "https://unsplash.com/photos/woman-near-green-leafed-plants-R8bNESnnKR8",
+          role: "speaker",
+          gender: "female",
         },
         {
           name: "Alice Brown",
-          profileImage: "https://unsplash.com/photos/a-man-with-a-beard-and-a-green-shirt-ZgwIEWcvlKo",
+          profileImage:
+            "https://unsplash.com/photos/a-man-with-a-beard-and-a-green-shirt-ZgwIEWcvlKo",
+          gender: "female",
         },
         {
           name: "Bob White",
-          profileImage: "https://unsplash.com/photos/a-man-with-a-beard-and-a-green-shirt-ZgwIEWcvlKo",
+          profileImage:
+            "https://unsplash.com/photos/a-man-with-a-beard-and-a-green-shirt-ZgwIEWcvlKo",
+          gender: "female",
         },
       ],
       description:
@@ -138,20 +153,28 @@ export default function Home() {
       attendees: [
         {
           name: "John Doe",
-          profileImage: "https://images.unsplash.com/photo-1521566652839-697aa473761a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D",
+          profileImage:
+            "https://images.unsplash.com/photo-1521566652839-697aa473761a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D",
+          gender: "male",
         },
         {
           name: "Jane Smith",
-          profileImage: "https://unsplash.com/photos/woman-near-green-leafed-plants-R8bNESnnKR8",
-          role:"speaker"
+          profileImage:
+            "https://unsplash.com/photos/woman-near-green-leafed-plants-R8bNESnnKR8",
+          role: "speaker",
+          gender: "female",
         },
         {
           name: "Alice Brown",
-          profileImage: "https://unsplash.com/photos/a-man-with-a-beard-and-a-green-shirt-ZgwIEWcvlKo",
+          profileImage:
+            "https://unsplash.com/photos/a-man-with-a-beard-and-a-green-shirt-ZgwIEWcvlKo",
+          gender: "female",
         },
         {
           name: "Bob White",
-          profileImage: "https://unsplash.com/photos/a-man-with-a-beard-and-a-green-shirt-ZgwIEWcvlKo",
+          profileImage:
+            "https://unsplash.com/photos/a-man-with-a-beard-and-a-green-shirt-ZgwIEWcvlKo",
+          gender: "female",
         },
       ],
       description:
@@ -170,20 +193,28 @@ export default function Home() {
       attendees: [
         {
           name: "John Doe",
-          profileImage: "https://images.unsplash.com/photo-1521566652839-697aa473761a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D",
+          profileImage:
+            "https://images.unsplash.com/photo-1521566652839-697aa473761a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D",
+          gender: "male",
         },
         {
           name: "Jane Smith",
-          profileImage: "https://unsplash.com/photos/woman-near-green-leafed-plants-R8bNESnnKR8",
-          role:"speaker"
+          profileImage:
+            "https://unsplash.com/photos/woman-near-green-leafed-plants-R8bNESnnKR8",
+          role: "speaker",
+          gender: "female",
         },
         {
           name: "Alice Brown",
-          profileImage: "https://unsplash.com/photos/a-man-with-a-beard-and-a-green-shirt-ZgwIEWcvlKo",
+          profileImage:
+            "https://unsplash.com/photos/a-man-with-a-beard-and-a-green-shirt-ZgwIEWcvlKo",
+          gender: "female",
         },
         {
           name: "Bob White",
-          profileImage: "https://unsplash.com/photos/a-man-with-a-beard-and-a-green-shirt-ZgwIEWcvlKo",
+          profileImage:
+            "https://unsplash.com/photos/a-man-with-a-beard-and-a-green-shirt-ZgwIEWcvlKo",
+          gender: "female",
         },
       ],
       description:
@@ -203,20 +234,28 @@ export default function Home() {
       attendees: [
         {
           name: "John Doe",
-          profileImage: "https://images.unsplash.com/photo-1521566652839-697aa473761a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D",
+          profileImage:
+            "https://images.unsplash.com/photo-1521566652839-697aa473761a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D",
+          gender: "male",
         },
         {
           name: "Jane Smith",
-          profileImage: "https://unsplash.com/photos/woman-near-green-leafed-plants-R8bNESnnKR8",
-          role:"speaker"
+          profileImage:
+            "https://unsplash.com/photos/woman-near-green-leafed-plants-R8bNESnnKR8",
+          role: "speaker",
+          gender: "female",
         },
         {
           name: "Alice Brown",
-          profileImage: "https://unsplash.com/photos/a-man-with-a-beard-and-a-green-shirt-ZgwIEWcvlKo",
+          profileImage:
+            "https://unsplash.com/photos/a-man-with-a-beard-and-a-green-shirt-ZgwIEWcvlKo",
+          gender: "female",
         },
         {
           name: "Bob White",
-          profileImage: "https://unsplash.com/photos/a-man-with-a-beard-and-a-green-shirt-ZgwIEWcvlKo",
+          profileImage:
+            "https://unsplash.com/photos/a-man-with-a-beard-and-a-green-shirt-ZgwIEWcvlKo",
+          gender: "female",
         },
       ],
       description:
@@ -234,20 +273,28 @@ export default function Home() {
       attendees: [
         {
           name: "John Doe",
-          profileImage: "https://images.unsplash.com/photo-1521566652839-697aa473761a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D",
+          profileImage:
+            "https://images.unsplash.com/photo-1521566652839-697aa473761a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D",
+          gender: "male",
         },
         {
           name: "Jane Smith",
-          profileImage: "https://unsplash.com/photos/woman-near-green-leafed-plants-R8bNESnnKR8",
-          role:"speaker"
+          profileImage:
+            "https://unsplash.com/photos/woman-near-green-leafed-plants-R8bNESnnKR8",
+          role: "speaker",
+          gender: "female",
         },
         {
           name: "Alice Brown",
-          profileImage: "https://unsplash.com/photos/a-man-with-a-beard-and-a-green-shirt-ZgwIEWcvlKo",
+          profileImage:
+            "https://unsplash.com/photos/a-man-with-a-beard-and-a-green-shirt-ZgwIEWcvlKo",
+          gender: "female",
         },
         {
           name: "Bob White",
-          profileImage: "https://unsplash.com/photos/a-man-with-a-beard-and-a-green-shirt-ZgwIEWcvlKo",
+          profileImage:
+            "https://unsplash.com/photos/a-man-with-a-beard-and-a-green-shirt-ZgwIEWcvlKo",
+          gender: "female",
         },
       ],
       description:
@@ -266,20 +313,28 @@ export default function Home() {
       attendees: [
         {
           name: "John Doe",
-          profileImage: "https://images.unsplash.com/photo-1521566652839-697aa473761a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D",
+          profileImage:
+            "https://images.unsplash.com/photo-1521566652839-697aa473761a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D",
+          gender: "male",
         },
         {
           name: "Jane Smith",
-          profileImage: "https://unsplash.com/photos/woman-near-green-leafed-plants-R8bNESnnKR8",
-          role:"speaker"
+          profileImage:
+            "https://unsplash.com/photos/woman-near-green-leafed-plants-R8bNESnnKR8",
+          role: "speaker",
+          gender: "female",
         },
         {
           name: "Alice Brown",
-          profileImage: "https://unsplash.com/photos/a-man-with-a-beard-and-a-green-shirt-ZgwIEWcvlKo",
+          profileImage:
+            "https://unsplash.com/photos/a-man-with-a-beard-and-a-green-shirt-ZgwIEWcvlKo",
+          gender: "female",
         },
         {
           name: "Bob White",
-          profileImage: "https://unsplash.com/photos/a-man-with-a-beard-and-a-green-shirt-ZgwIEWcvlKo",
+          profileImage:
+            "https://unsplash.com/photos/a-man-with-a-beard-and-a-green-shirt-ZgwIEWcvlKo",
+          gender: "female",
         },
       ],
       description:
@@ -297,20 +352,28 @@ export default function Home() {
       attendees: [
         {
           name: "John Doe",
-          profileImage: "https://images.unsplash.com/photo-1521566652839-697aa473761a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D",
+          profileImage:
+            "https://images.unsplash.com/photo-1521566652839-697aa473761a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D",
+          gender: "male",
         },
         {
           name: "Jane Smith",
-          profileImage: "https://unsplash.com/photos/woman-near-green-leafed-plants-R8bNESnnKR8",
-          role:"speaker"
+          profileImage:
+            "https://unsplash.com/photos/woman-near-green-leafed-plants-R8bNESnnKR8",
+          role: "speaker",
+          gender: "female",
         },
         {
           name: "Alice Brown",
-          profileImage: "https://unsplash.com/photos/a-man-with-a-beard-and-a-green-shirt-ZgwIEWcvlKo",
+          profileImage:
+            "https://unsplash.com/photos/a-man-with-a-beard-and-a-green-shirt-ZgwIEWcvlKo",
+          gender: "female",
         },
         {
           name: "Bob White",
-          profileImage: "https://unsplash.com/photos/a-man-with-a-beard-and-a-green-shirt-ZgwIEWcvlKo",
+          profileImage:
+            "https://unsplash.com/photos/a-man-with-a-beard-and-a-green-shirt-ZgwIEWcvlKo",
+          gender: "female",
         },
       ],
       description:
@@ -329,20 +392,28 @@ export default function Home() {
       attendees: [
         {
           name: "John Doe",
-          profileImage: "https://images.unsplash.com/photo-1521566652839-697aa473761a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D",
+          profileImage:
+            "https://images.unsplash.com/photo-1521566652839-697aa473761a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D",
+          gender: "male",
         },
         {
           name: "Jane Smith",
-          profileImage: "https://unsplash.com/photos/woman-near-green-leafed-plants-R8bNESnnKR8",
-          role:"speaker"
+          profileImage:
+            "https://unsplash.com/photos/woman-near-green-leafed-plants-R8bNESnnKR8",
+          role: "speaker",
+          gender: "female",
         },
         {
           name: "Alice Brown",
-          profileImage: "https://unsplash.com/photos/a-man-with-a-beard-and-a-green-shirt-ZgwIEWcvlKo",
+          profileImage:
+            "https://unsplash.com/photos/a-man-with-a-beard-and-a-green-shirt-ZgwIEWcvlKo",
+          gender: "female",
         },
         {
           name: "Bob White",
-          profileImage: "https://unsplash.com/photos/a-man-with-a-beard-and-a-green-shirt-ZgwIEWcvlKo",
+          profileImage:
+            "https://unsplash.com/photos/a-man-with-a-beard-and-a-green-shirt-ZgwIEWcvlKo",
+          gender: "female",
         },
       ],
       description:
@@ -361,6 +432,10 @@ export default function Home() {
   ]);
   const [selectedInterests, setSelectedInterests] = useState<string>("");
 
+  /**
+   * This function is used to select an interest to handle filtering events by user's interests
+   * @param {string} interest - A user's interest
+   */
   const toggleInterest = (interest: string) => {
     setSelectedInterests(interest);
   };
@@ -399,7 +474,7 @@ export default function Home() {
           </Card>
         </div>
         <div className="w-full lg:w-[70%]">
-          <Events events={events} />
+          <Events events={events} show={true} />
         </div>
         <Dialog>
           <DialogTrigger
@@ -421,8 +496,12 @@ export default function Home() {
             </DialogHeader>
             <Tabs defaultValue="interest" className="w-full">
               <TabsList className="flex justify-center mb-4">
-                <TabsTrigger value="interest" className="w-full">Interest</TabsTrigger>
-                <TabsTrigger value="date" className="w-full">Date</TabsTrigger>
+                <TabsTrigger value="interest" className="w-full">
+                  Interest
+                </TabsTrigger>
+                <TabsTrigger value="date" className="w-full">
+                  Date
+                </TabsTrigger>
               </TabsList>
               <TabsContent value="interest">
                 {" "}
@@ -458,7 +537,6 @@ export default function Home() {
                     inline
                   />
                 </div>
-               
               </TabsContent>
             </Tabs>
           </DialogContent>

@@ -41,6 +41,11 @@ type ItemType = {
 };
 const EventDetails = () => {
   const [item, setItem] = useState<ItemType | any>({});
+
+  /**
+ * Function handles fetching events from storage
+ * 
+ */
   useEffect(() => {
     if (typeof window !== "undefined") {
       const storedItem = localStorage.getItem("singleEvent");
@@ -107,7 +112,7 @@ const EventDetails = () => {
         <main className="bg-gray-200 min-h-screen lg:px-20 px-5 mb-10 flex flex-col-reverse gap-y-5 lg:flex-row items-start gap-x-10 py-5 lg:py-10">
           <div className="w-full lg:w-[70%]">
             <Image
-              src={item.coverImage}
+              src={"/images/event-banner.jpg"}
               alt=""
               width={500}
               height={200}
@@ -133,6 +138,7 @@ const EventDetails = () => {
                         name: string;
                         profileImage: string;
                         role: string;
+                        gender: string;
                       },
                       index: React.Key | null | undefined,
                     ) => (
@@ -147,7 +153,11 @@ const EventDetails = () => {
                             }`}
                           >
                             <Image
-                              src={single.profileImage}
+                              src={
+                                single.gender === "male"
+                                  ? "/images/user-male.jpg"
+                                  : "/images/user-female.jpg"
+                              }
                               alt=""
                               width={500}
                               height={200}

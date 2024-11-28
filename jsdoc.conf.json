@@ -1,22 +1,17 @@
 {
-  "tags": {
-    "allowUnknownTags": true,
-    "dictionaries": ["jsdoc", "closure"]
-  },
   "source": {
-    "include": ["src"],
+    "include": ["src","app"],
     "includePattern": ".+\\.js(doc|x)?$",
-    "excludePattern": "(^|\\/|\\\\)_"
+    "excludePattern": "(node_modules/|docs)"
   },
-  "plugins": ["plugins/markdown"],
+  "plugin": ["plugins/markdown"],
   "templates": {
-    "better-docs": {
-      "name": "My React components"
-    }
+    "cleverLinks": true,
+    "monospaceLinks": true
   },
   "opts": {
-    "destination": "docs",
     "recurse": true,
-    "readme": "README.md"
+    "destination": "./documentation/",
+    "readme": "./README.md"
   }
 }

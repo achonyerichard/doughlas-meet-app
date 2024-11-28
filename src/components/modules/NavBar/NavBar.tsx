@@ -81,8 +81,8 @@ const NavBar = () => {
               <DropdownMenuItem>
                 {" "}
                 <Link
-                  href="#"
-                  className="hidden w-full  bg-red-500 p-2 lg:flex justify-center items-center gap-2 text-white"
+                  href="/billing"
+                  className=" w-full  bg-red-500 p-2 lg:flex justify-center items-center gap-2 text-white"
                 >
                   <Star fill="#FFD700" color="#FFD700" size={12} />
                   Subscribe now - 20% off

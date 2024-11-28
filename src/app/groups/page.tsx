@@ -30,6 +30,7 @@ import {
   getEmojiFlag,
 } from "countries-list";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { useRouter } from "next/navigation";
 const groups = [
   {
     name: "Tech Enthusiasts",
@@ -145,7 +146,7 @@ const Page = () => {
     },
   });
   const [selectedInterests, setSelectedInterests] = useState<any>([]);
-
+const router = useRouter()
   const toggleInterest = (interest: string) => {
     setSelectedInterests((prev: string[]) =>
       prev.includes(interest)
@@ -158,6 +159,9 @@ const Page = () => {
       const ints = [selectedInterests]
       const newData = { ints, ...data }
       console.log(newData)
+      if (data) {
+          router.push("/billing")
+      }
   };
   return (
     <div>
@@ -214,7 +218,6 @@ const Page = () => {
                               {country?.name}
                             </SelectItem>
                           ))}
-                          <SelectItem value="physical">Physical</SelectItem>
                         </SelectContent>
                       </Select>
                     )}

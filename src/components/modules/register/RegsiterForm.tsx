@@ -177,7 +177,7 @@ const RegisterForm = () => {
           type="submit"
           disabled={false}
         >
-          Login
+          Register
           {/* {false ? <Spinner size="2" loading={true} /> : <>Log In</>} */}
         </Button>
         <div className="flex items-center justify-center">

@@ -6,7 +6,7 @@ const Billing = () => {
       <main className="max-w-6xl mx-auto pt-10 pb-36 px-8">
         <div className="max-w-md mx-auto mb-14 text-center">
           <h1 className="text-4xl font-semibold mb-6 lg:text-5xl">
-            <span className="text-indigo-600">Flexible</span> Plans
+            <span className="text-primary">Flexible</span> Plans
           </h1>
           <p className="text-xl text-gray-500 font-medium">
             Choose a plan that works best for you and your team.
@@ -48,7 +48,7 @@ const Billing = () => {
             </ul>
             <a
               href="#/"
-              className="flex justify-center items-center bg-indigo-600 rounded-xl py-5 px-4 text-center text-white text-xl"
+              className="flex justify-center items-center bg-primary rounded-xl py-5 px-4 text-center text-white text-xl"
             >
               Choose Plan
               <img
@@ -94,7 +94,7 @@ const Billing = () => {
             </ul>
             <a
               href="#/"
-              className="flex justify-center items-center bg-indigo-600 rounded-xl py-6 px-4 text-center text-white text-2xl"
+              className="flex justify-center items-center bg-primary rounded-xl py-6 px-4 text-center text-white text-2xl"
             >
               Choose Plan
               <img
@@ -138,7 +138,7 @@ const Billing = () => {
             </ul>
             <a
               href="#/"
-              className="flex justify-center items-center bg-indigo-600 rounded-xl py-5 px-4 text-center text-white text-xl"
+              className="flex justify-center items-center bg-primary rounded-xl py-5 px-4 text-center text-white text-xl"
             >
               Choose Plan
               <img

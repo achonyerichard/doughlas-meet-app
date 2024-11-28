@@ -122,7 +122,7 @@ const EventDetails = () => {
               <span>{item.description}</span>
             </div>
             <h2 className="text-3xl font-bold  text-black py-3">
-              Attendees ({item.totalAttendees})
+              Attendees ({ item?.attendees?.length})
             </h2>
             <div className="bg-white p-3">
               <Carousel

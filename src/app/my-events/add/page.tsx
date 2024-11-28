@@ -200,7 +200,6 @@ export default function CreateEventForm() {
                             {country?.name}
                           </SelectItem>
                         ))}
-                        <SelectItem value="physical">Physical</SelectItem>
                       </SelectContent>
                     </Select>
                   )}

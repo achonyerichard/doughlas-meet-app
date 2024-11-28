@@ -93,7 +93,7 @@ const Events = ({ events, show }: { events: any; show: boolean }) => {
           </Select>
           <Select>
             <SelectTrigger className="w-1/2 lg:w-[150px] rounded-[20px] border-none bg-gray-200">
-              <SelectValue placeholder="Event Type" />
+              <SelectValue placeholder="Category" />
             </SelectTrigger>
             <SelectContent className="border-none bg-white">
               <SelectItem value="light">Educational</SelectItem>

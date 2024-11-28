@@ -5,16 +5,16 @@ import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
 
 const links = [
-  { href: "home", label: "Home", id: 1 },
-  { href: "events", label: "Events", id: 4 },
-  { href: "about", label: "About Us", id: 2 },
+  { href: "/", label: "Home", id: 1 },
+  { href: "groups", label: "Groups", id: 4 },
+  { href: "billing", label: "Billing", id: 2 },
 
-  { href: "contact", label: "Contact Us ", id: 5 },
+  { href: "my-events", label: "My Events ", id: 5 },
 ];
 const socials = [
   { sm: "/icons/facebookIcon.png", url: "Services" },
   { sm: "/icons/ig.png", url: "About Us" },
-  { sm: "/icons/XIcon.png", url: "Services" },
+  { sm: "/icons/XIcon.png", url: "Servicesc" },
   { sm: "/icons/tikTok.png", url: "Home" },
 ];
 const Footer = () => {

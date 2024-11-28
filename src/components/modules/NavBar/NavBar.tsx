@@ -45,7 +45,7 @@ const NavBar = () => {
             alt=""
             width={500}
             height={200}
-            className="hidden lg:block h-auto w-16 object-cover   "
+            className="block h-auto w-10 object-cover   "
           />
         </Link>
 
@@ -119,7 +119,7 @@ const NavBar = () => {
 
         <div className="flex gap-x-3 items-center">
           <Link
-            href="#"
+            href="/billing"
             className="hidden   bg-red-500 p-2 lg:flex justify-center items-center gap-2 text-white"
           >
             <Star fill="#FFD700" color="#FFD700" size={12} />
